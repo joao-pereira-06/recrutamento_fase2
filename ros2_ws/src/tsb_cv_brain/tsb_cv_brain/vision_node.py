@@ -1,15 +1,21 @@
 """
-Vision node: classifies incoming images into turtle commands with PyTorch.
+Vision node: classifies incoming images (ROS topic or Web Canvas HTTP) with PyTorch.
 
 ROS interface
     Subscribes: /vision/image    (sensor_msgs/msg/Image)
     Publishes:  /vision/command  (std_msgs/msg/String), one of COMMANDS
-
-The C++ Behavior Tree (tsb_bt_core, GetVisionCommand node) listens on
-/vision/command, so keep the topic name and the command strings in sync.
+    Web UI:     http://localhost:8080
 """
 
+import base64
+from http.server import BaseHTTPRequestHandler, HTTPServer
+import io
+import json
+from pathlib import Path
+import threading
+
 import numpy as np
+from PIL import Image as PILImage
 import rclpy
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
@@ -19,8 +25,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# Contract with the C++ Behavior Tree: these are the only strings it expects.
 COMMANDS = ('BACKWARD', 'LEFT', 'RIGHT', 'FORWARD')
+WEB_INDEX = Path('/home/joao/TSB/recrutamento2026/web/index.html')
 
 
 class TurtleVisionCNN(nn.Module):
@@ -28,27 +34,22 @@ class TurtleVisionCNN(nn.Module):
 
     def __init__(self, num_classes: int = 4):
         super().__init__()
-        # entrada (B, 3, 224, 224)
         self.features = nn.Sequential(
-            # 224x224 -> 112x112
             nn.Conv2d(3, 16, kernel_size=3, padding=1),
             nn.BatchNorm2d(16),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
-            # 112x112 -> 56x56
             nn.Conv2d(16, 32, kernel_size=3, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
-            # 56x56 -> 28x28
             nn.Conv2d(32, 64, kernel_size=3, padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
-            # 28x28 -> 14x14
             nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.BatchNorm2d(128),
             nn.ReLU(inplace=True),
@@ -73,21 +74,21 @@ class TurtleVisionCNN(nn.Module):
 
 
 class VisionNode(Node):
-    """ROS 2 wrapper around TurtleVisionCNN."""
+    """ROS 2 wrapper around TurtleVisionCNN + Web Canvas HTTP server."""
 
     def __init__(self):
         super().__init__('vision_node')
 
-        # ------------------------------------------------------ parameters
         self.declare_parameter('image_topic', '/vision/image')
         self.declare_parameter('command_topic', '/vision/command')
         self.declare_parameter('model_path', '')
+        self.declare_parameter('web_port', 8080)
 
         image_topic = self.get_parameter('image_topic').value
         command_topic = self.get_parameter('command_topic').value
         model_path = self.get_parameter('model_path').value
+        web_port = int(self.get_parameter('web_port').value)
 
-        # ----------------------------------------------------------- model
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         self.get_logger().info(f'PyTorch {torch.__version__}, device: {self.device}')
 
@@ -104,16 +105,67 @@ class VisionNode(Node):
             self.get_logger().warn('No model_path given, the model is untrained')
             self.model.eval()
 
-        # ------------------------------------------- publisher / subscriber
         self.command_pub = self.create_publisher(String, command_topic, 10)
         self.image_sub = self.create_subscription(
             Image, image_topic, self.image_callback, 10)
 
+        self._start_web_server(web_port)
         self.get_logger().info(
-            f'Listening on "{image_topic}", publishing commands on "{command_topic}"')
+            f'Listening on "{image_topic}" & Web UI http://localhost:{web_port}')
+
+    def _start_web_server(self, port: int) -> None:
+        vision_node = self
+
+        class CanvasHandler(BaseHTTPRequestHandler):
+            def do_GET(self):
+                if self.path in ('/', '/index.html') and WEB_INDEX.exists():
+                    content = WEB_INDEX.read_bytes()
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'text/html; charset=utf-8')
+                    self.send_header('Content-Length', str(len(content)))
+                    self.end_headers()
+                    self.wfile.write(content)
+                else:
+                    self.send_error(404, 'Not Found')
+
+            def do_POST(self):
+                if self.path != '/predict':
+                    self.send_error(404, 'Not Found')
+                    return
+
+                length = int(self.headers.get('Content-Length', 0))
+                payload = json.loads(self.rfile.read(length).decode('utf-8'))
+                b64_data = payload['image'].split(',', 1)[1]
+                img_bytes = base64.b64decode(b64_data)
+
+                pil_img = PILImage.open(io.BytesIO(img_bytes)).convert('RGB')
+                command = vision_node.classify_pil_image(pil_img)
+                vision_node.get_logger().info(f'[Web Canvas] Classified arrow as: {command}')
+                vision_node.publish_command(command)
+
+                resp = json.dumps({'command': command}).encode('utf-8')
+                self.send_response(200)
+                self.send_header('Content-Type', 'application/json')
+                self.send_header('Content-Length', str(len(resp)))
+                self.end_headers()
+                self.wfile.write(resp)
+
+            def log_message(self, format, *args):
+                pass  # Evita poluir o log do ROS 2 com pedidos HTTP
+
+        server = HTTPServer(('0.0.0.0', port), CanvasHandler)
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+
+    def classify_pil_image(self, pil_img: PILImage.Image) -> str:
+        pil_resized = pil_img.resize((224, 224))
+        arr = np.array(pil_resized, dtype=np.float32) / 255.0
+        tensor = torch.from_numpy(arr).permute(2, 0, 1).unsqueeze(0).to(self.device)
+        with torch.no_grad():
+            logits = self.model(tensor)
+        return self.postprocess(logits)
 
     def image_callback(self, msg: Image) -> None:
-        """Classify one image and publish the resulting command."""
         try:
             tensor = self.preprocess(msg).to(self.device)
             with torch.no_grad():
@@ -125,7 +177,6 @@ class VisionNode(Node):
             self.get_logger().error(f'Inference error: {e}')
 
     def preprocess(self, msg: Image) -> torch.Tensor:
-        """Convert a sensor_msgs/Image into a model input tensor (1, 3, 224, 224)."""
         if msg.encoding in ('rgb8', 'bgr8'):
             channels = 3
         elif msg.encoding == 'mono8':
@@ -133,7 +184,6 @@ class VisionNode(Node):
         else:
             raise ValueError(f'Unsupported image encoding: {msg.encoding}')
 
-        # Respeita o stride (msg.step) caso exista padding nas linhas
         raw = np.frombuffer(msg.data, dtype=np.uint8).reshape((msg.height, msg.step))
         img = raw[:, :msg.width * channels].reshape((msg.height, msg.width, channels))
 
@@ -142,7 +192,6 @@ class VisionNode(Node):
         elif channels == 1:
             img = np.repeat(img, 3, axis=2)
 
-        # Converte para (1, 3, H, W) em [0.0, 1.0] (igual ao transforms.ToTensor() do treino)
         tensor = torch.from_numpy(img).permute(2, 0, 1).float() / 255.0
         tensor = F.interpolate(
             tensor.unsqueeze(0), size=(224, 224), mode='bilinear', align_corners=False
@@ -150,12 +199,10 @@ class VisionNode(Node):
         return tensor
 
     def postprocess(self, logits: torch.Tensor) -> str:
-        """Convert model logits into one of COMMANDS."""
         pred_idx = int(torch.argmax(logits, dim=1).item())
         return COMMANDS[pred_idx]
 
     def publish_command(self, command: str) -> None:
-        """Publish a command for the Behavior Tree."""
         if command not in COMMANDS:
             self.get_logger().error(f'Refusing to publish unknown command "{command}"')
             return
