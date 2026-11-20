@@ -8,8 +8,8 @@
   -->
   <BehaviorTree ID="MainTree">
     <Sequence name="VisionControlLoop">
-      <SetBlackboard output_key="move_speed" value="1.5"/>
-      <SetBlackboard output_key="move_duration" value="0.5"/>
+      <SetBlackboard output_key="move_speed" value="1.5708"/>
+      <SetBlackboard output_key="move_duration" value="1.0"/>
       <GetVisionCommand name="ReadVision" command="{vision_command}"/>
       <MoveTurtle name="ExecuteMotion" command="{vision_command}" speed="{move_speed}" duration="{move_duration}"/>
     </Sequence>

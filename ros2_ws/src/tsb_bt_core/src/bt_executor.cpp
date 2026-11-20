@@ -76,33 +76,11 @@ int main(int argc, char ** argv)
   BT::Groot2Publisher groot_publisher(tree, static_cast<unsigned>(groot_port));
 
   // ------------------------------------------------------------ execution loop
+// ------------------------------------------------------------ execution loop
   rclcpp::Rate rate(tick_rate_hz);
   while (rclcpp::ok()) {
-    // Ticks the tree until it returns SUCCESS or FAILURE.
-    // NOTE: if your nodes can stay RUNNING forever, make them check
-    // rclcpp::ok() so Ctrl+C still stops the program.
     const BT::NodeStatus status = tree.tickWhileRunning(10ms);
-    /*
-    if (status == BT::NodeStatus::SUCCESS)
-    {
-      RCLCPP_INFO(node->get_logger(), "Drawing completed successfully! Stopping executor.");
-      break;
-    }
-    */
-    rclcpp::Rate rate(tick_rate_hz);
-    while (rclcpp::ok())
-    {
-      const BT::NodeStatus status = tree.tickWhileRunning(10ms);
 
-      RCLCPP_DEBUG(
-      node->get_logger(), "Tree finished with status: %s",
-      BT::toStr(status).c_str());
-
-    rate.sleep();
-    }
-    
-    // TODO (candidate): decide what happens when the tree finishes.
-    // (Keep looping? Stop on SUCCESS? Log FAILURE reasons?)
     RCLCPP_DEBUG(
       node->get_logger(), "Tree finished with status: %s",
       BT::toStr(status).c_str());

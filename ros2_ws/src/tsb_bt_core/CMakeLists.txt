@@ -18,11 +18,14 @@ find_package(geometry_msgs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(behaviortree_cpp REQUIRED)
 find_package(ament_index_cpp REQUIRED)
+find_package(turtlesim REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 set(dependencies
   rclcpp
   geometry_msgs
   std_msgs
+  turtlesim
   behaviortree_cpp
   ament_index_cpp
 )

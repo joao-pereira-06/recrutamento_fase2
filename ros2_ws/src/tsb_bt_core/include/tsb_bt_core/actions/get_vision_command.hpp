@@ -97,6 +97,10 @@ public:
     }
 
     setOutput("command", val);
+    {
+      std::lock_guard<std::mutex> lock(mutex_);
+      latest_command_.reset();
+    }
     return BT::NodeStatus::SUCCESS;
   }
 

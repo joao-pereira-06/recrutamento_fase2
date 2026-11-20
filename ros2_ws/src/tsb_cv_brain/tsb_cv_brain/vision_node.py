@@ -9,7 +9,7 @@ The C++ Behavior Tree (tsb_bt_core, GetVisionCommand node) listens on
 /vision/command, so keep the topic name and the command strings in sync.
 """
 
-import numpy as np  # noqa: F401  (handy for Image -> tensor conversion)
+import numpy as np
 import rclpy
 from rclpy.executors import ExternalShutdownException
 from rclpy.node import Node
@@ -17,6 +17,7 @@ from sensor_msgs.msg import Image
 from std_msgs.msg import String
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 
 # Contract with the C++ Behavior Tree: these are the only strings it expects.
 COMMANDS = ('BACKWARD', 'LEFT', 'RIGHT', 'FORWARD')
@@ -26,36 +27,33 @@ class TurtleVisionCNN(nn.Module):
     """CNN that maps an image to one of the COMMANDS classes."""
 
     def __init__(self, num_classes: int = 4):
-
         super().__init__()
-        #entrada (B, 3, 224,224)
+        # entrada (B, 3, 224, 224)
         self.features = nn.Sequential(
-
-            #224x224 -> 112x112
+            # 224x224 -> 112x112
             nn.Conv2d(3, 16, kernel_size=3, padding=1),
             nn.BatchNorm2d(16),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
-            #112x112 -> 56x56
+            # 112x112 -> 56x56
             nn.Conv2d(16, 32, kernel_size=3, padding=1),
             nn.BatchNorm2d(32),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
-            #56x56 -> 28x28
+            # 56x56 -> 28x28
             nn.Conv2d(32, 64, kernel_size=3, padding=1),
             nn.BatchNorm2d(64),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
 
-            #28x28 -> 14x14
+            # 28x28 -> 14x14
             nn.Conv2d(64, 128, kernel_size=3, padding=1),
             nn.BatchNorm2d(128),
             nn.ReLU(inplace=True),
             nn.MaxPool2d(kernel_size=2, stride=2),
-
-        )   
+        )
 
         self.avgpool = nn.AdaptiveAvgPool2d((1, 1))
 
@@ -67,9 +65,7 @@ class TurtleVisionCNN(nn.Module):
             nn.Linear(64, num_classes),
         )
 
-
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-
         x = self.features(x)
         x = self.avgpool(x)
         x = self.classifier(x)
@@ -96,22 +92,20 @@ class VisionNode(Node):
         self.get_logger().info(f'PyTorch {torch.__version__}, device: {self.device}')
 
         self.model = TurtleVisionCNN().to(self.device)
-        # =================================================================
-        # TODO (candidate): Implement PyTorch model loading here.
-        #   - Load the trained weights from `model_path`
-        #     (e.g. torch.load(..., map_location=self.device) +
-        #      self.model.load_state_dict(...)).
-        #   - Put the model in evaluation mode.
-        #   - Decide what to do when `model_path` is empty or invalid.
-        # =================================================================
-        if not model_path:
+        if model_path:
+            try:
+                state_dict = torch.load(model_path, map_location=self.device)
+                self.model.load_state_dict(state_dict)
+                self.model.eval()
+                self.get_logger().info(f'Loaded trained weights from "{model_path}"')
+            except Exception as e:
+                self.get_logger().error(f'Failed to load weights from "{model_path}": {e}')
+        else:
             self.get_logger().warn('No model_path given, the model is untrained')
+            self.model.eval()
 
         # ------------------------------------------- publisher / subscriber
-        # Publishes the classification consumed by the C++ Behavior Tree.
         self.command_pub = self.create_publisher(String, command_topic, 10)
-
-        # Receives the images to classify.
         self.image_sub = self.create_subscription(
             Image, image_topic, self.image_callback, 10)
 
@@ -120,28 +114,45 @@ class VisionNode(Node):
 
     def image_callback(self, msg: Image) -> None:
         """Classify one image and publish the resulting command."""
-        # =================================================================
-        # TODO (candidate): implement the inference pipeline
-        #   1. Convert `msg` (height, width, encoding, step, data) into a
-        #      torch.Tensor of shape (1, C, H, W) with preprocess().
-        #   2. Run the model under torch.no_grad().
-        #   3. Turn the logits into one of COMMANDS with postprocess().
-        #   4. Send it to the Behavior Tree with publish_command().
-        # =================================================================
-        self.get_logger().info(
-            f'Received {msg.width}x{msg.height} image ({msg.encoding}), '
-            'inference not implemented yet',
-            throttle_duration_sec=5.0)
+        try:
+            tensor = self.preprocess(msg).to(self.device)
+            with torch.no_grad():
+                logits = self.model(tensor)
+            command = self.postprocess(logits)
+            self.get_logger().info(f'Classified arrow as: {command}')
+            self.publish_command(command)
+        except Exception as e:
+            self.get_logger().error(f'Inference error: {e}')
 
     def preprocess(self, msg: Image) -> torch.Tensor:
-        """Convert a sensor_msgs/Image into a model input tensor."""
-        # TODO (candidate): implement image preprocessing.
-        raise NotImplementedError
+        """Convert a sensor_msgs/Image into a model input tensor (1, 3, 224, 224)."""
+        if msg.encoding in ('rgb8', 'bgr8'):
+            channels = 3
+        elif msg.encoding == 'mono8':
+            channels = 1
+        else:
+            raise ValueError(f'Unsupported image encoding: {msg.encoding}')
+
+        # Respeita o stride (msg.step) caso exista padding nas linhas
+        raw = np.frombuffer(msg.data, dtype=np.uint8).reshape((msg.height, msg.step))
+        img = raw[:, :msg.width * channels].reshape((msg.height, msg.width, channels))
+
+        if msg.encoding == 'bgr8':
+            img = img[:, :, ::-1].copy()
+        elif channels == 1:
+            img = np.repeat(img, 3, axis=2)
+
+        # Converte para (1, 3, H, W) em [0.0, 1.0] (igual ao transforms.ToTensor() do treino)
+        tensor = torch.from_numpy(img).permute(2, 0, 1).float() / 255.0
+        tensor = F.interpolate(
+            tensor.unsqueeze(0), size=(224, 224), mode='bilinear', align_corners=False
+        )
+        return tensor
 
     def postprocess(self, logits: torch.Tensor) -> str:
         """Convert model logits into one of COMMANDS."""
-        # TODO (candidate): implement output decoding.
-        raise NotImplementedError
+        pred_idx = int(torch.argmax(logits, dim=1).item())
+        return COMMANDS[pred_idx]
 
     def publish_command(self, command: str) -> None:
         """Publish a command for the Behavior Tree."""
