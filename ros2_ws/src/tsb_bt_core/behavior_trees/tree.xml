@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+
+  <!--
+    DONE (candidate): configure the ports of the two actions below, either here
+    or in Groot2 (e.g. share the command through a blackboard entry such as
+    {vision_command}). You may also restructure the tree.
+  -->
+  <BehaviorTree ID="MainTree">
+    <Sequence name="VisionControlLoop">
+      <SetBlackboard output_key="move_speed" value="1.5"/>
+      <SetBlackboard output_key="move_duration" value="0.5"/>
+      <GetVisionCommand name="ReadVision" command="{vision_command}"/>
+      <MoveTurtle name="ExecuteMotion" command="{vision_command}" speed="{move_speed}" duration="{move_duration}"/>
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot2). Keep in sync with the C++
+       providedPorts(); run bt_executor with -p print_tree_nodes_model:=true
+       to print the up-to-date model. -->
+<!-- Modelo dos Nós para o Groot2 -->
+<TreeNodesModel>
+    <Action ID="GetVisionCommand">
+      <output_port name="command" type="std::string">Latest command received from the vision node</output_port>
+    </Action>
+    <Action ID="MoveTurtle">
+      <input_port name="command" type="std::string" default="FORWARD">Direction: FORWARD | BACKWARD | LEFT | RIGHT | CIRCLE</input_port>
+      <input_port name="speed" type="double" default="1.5">Linear or angular speed</input_port>
+      <input_port name="duration" type="double" default="1.0">Duration of the movement in seconds</input_port>
+    </Action>
+  </TreeNodesModel>
+
+</root>

@@ -1,0 +1,4 @@
+# Python dependencies not provided by ROS 2 / rosdep.
+# Install with: pip install -r src/tsb_cv_brain/requirements.txt
+# (For a CPU-only build: pip install torch --index-url https://download.pytorch.org/whl/cpu)
+torch>=2.0
