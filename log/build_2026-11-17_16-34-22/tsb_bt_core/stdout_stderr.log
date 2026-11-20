@@ -1,0 +1,89 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found behaviortree_cpp: 4.10.0 (/opt/ros/humble/share/behaviortree_cpp/cmake)
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/joao/TSB/recrutamento2026/build/tsb_bt_core
+[35m[1mConsolidate compiler generated dependencies of target bt_executor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o[0m
+In file included from [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:16[m[K:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:154:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  154 | }[01;31m[K [m[K // namespace tsb_bt_core
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:[m[K In constructor ‘[01m[Ktsb_bt_core::MoveTurtle::MoveTurtle(const string&, const BT::NodeConfig&, rclcpp::Node::SharedPtr)[m[K’:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:33:9:[m[K [01;31m[Kerror: [m[Ktype ‘[01m[KBT::SyncActionNode[m[K’ is not a direct base of ‘[01m[Ktsb_bt_core::MoveTurtle[m[K’
+   33 |   : BT::[01;31m[KSyncActionNode[m[K(name, config), node_(std::move(node))
+      |         [01;31m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:33:60:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KBT::StatefulActionNode::StatefulActionNode()[m[K’
+   33 |   : BT::SyncActionNode(name, config), node_(std::move(node)[01;31m[K)[m[K
+      |                                                            [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/behaviortree_cpp/behavior_tree.h:16[m[K,
+                 from [01m[K/opt/ros/humble/include/behaviortree_cpp/bt_factory.h:17[m[K,
+                 from [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:10[m[K:
+[01m[K/opt/ros/humble/include/behaviortree_cpp/action_node.h:176:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[KBT::StatefulActionNode::StatefulActionNode(const string&, const BT::NodeConfig&)[m[K’
+  176 |   [01;36m[KStatefulActionNode[m[K(const std::string& name, const NodeConfig& config)
+      |   [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/behaviortree_cpp/action_node.h:176:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 0 provided
+In file included from [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:16[m[K:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus tsb_bt_core::MoveTurtle::onStart()[m[K’:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:74:7:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kreturn[m[K’
+   74 |       [01;31m[Kreturn[m[K BT::NodeStatus::FAILURE;
+      |       [01;31m[K^~~~~~[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:79:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kduration_sec_[m[K’ was not declared in this scope; did you mean ‘[01m[Kduration[m[K’?
+   79 |     [01;31m[Kduration_sec_[m[K = dur_res.value();
+      |     [01;31m[K^~~~~~~~~~~~~[m[K
+      |     [32m[Kduration[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus tsb_bt_core::MoveTurtle::onRunning()[m[K’:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:99:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kduration_sec_[m[K’ was not declared in this scope; did you mean ‘[01m[Kduration[m[K’?
+   99 |     if (elapsed >= [01;31m[Kduration_sec_[m[K)
+      |                    [01;31m[K^~~~~~~~~~~~~[m[K
+      |                    [32m[Kduration[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:[m[K In member function ‘[01m[Kvoid tsb_bt_core::MoveTurtle::publishVelocity()[m[K’:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:137:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd_vel_pub[m[K’ was not declared in this scope; did you mean ‘[01m[Kcmd_vel_pub_[m[K’?
+  137 |     [01;31m[Kcmd_vel_pub[m[K-> publish(twist);
+      |     [01;31m[K^~~~~~~~~~~[m[K
+      |     [32m[Kcmd_vel_pub_[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:[m[K In member function ‘[01m[Kvoid tsb_bt_core::MoveTurtle::stopTurtle()[m[K’:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:142:35:[m[K [01;31m[Kerror: [m[Kfound ‘[01m[K:[m[K’ in nested-name-specifier, expected ‘[01m[K::[m[K’
+  142 |     geometry_msgs::msg::Twist stop[01;31m[K:[m[Kmsg;
+      |                                   [01;31m[K^[m[K
+      |                                   [32m[K::[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:142:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop[m[K’ has not been declared
+  142 |     geometry_msgs::msg::Twist [01;31m[Kstop[m[K:msg;
+      |                               [01;31m[K^~~~[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:142:39:[m[K [01;31m[Kerror: [m[Kqualified-id in declaration before ‘[01m[K;[m[K’ token
+  142 |     geometry_msgs::msg::Twist stop:msg[01;31m[K;[m[K
+      |                                       [01;31m[K^[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:143:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_msg[m[K’ was not declared in this scope
+  143 |     cmd_vel_pub_->publish([01;31m[Kstop_msg[m[K);
+      |                           [01;31m[K^~~~~~~~[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:[m[K At global scope:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:107:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ at end of input
+  107 | }
+      |  [01;31m[K^[m[K
+In file included from [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:16[m[K:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:13:1:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K{[m[K’
+   13 | [01;36m[K{[m[K
+      | [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/bt_executor.dir/build.make:76: CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_executor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

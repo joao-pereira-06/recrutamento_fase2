@@ -1,0 +1,286 @@
+[0.069s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install', '--cmake-args', '-DCMAKE_EXPORT_COMPILE_COMMANDS=ON~']
+[0.069s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON~'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f6fd5a5c820>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f6fd5bd66b0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f6fd5bd66b0>>)
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.154s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.154s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/joao/TSB/recrutamento2026'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.154s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive) by extension 'python_setup_py'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extensions ['ignore', 'ignore_ament_install']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extension 'ignore'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extension 'ignore_ament_install'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extensions ['colcon_pkg']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extension 'colcon_pkg'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extensions ['colcon_meta']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extension 'colcon_meta'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extensions ['ros']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extension 'ros'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extensions ['cmake', 'python']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extension 'cmake'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extension 'python'
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extensions ['python_setup_py']
+[0.162s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction) by extension 'python_setup_py'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extensions ['ignore', 'ignore_ament_install']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extension 'ignore'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extension 'ignore_ament_install'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extensions ['colcon_pkg']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extension 'colcon_pkg'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extensions ['colcon_meta']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extension 'colcon_meta'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extensions ['ros']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extension 'ros'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extensions ['cmake', 'python']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extension 'cmake'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extension 'python'
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extensions ['python_setup_py']
+[0.163s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Down) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Left) by extension 'python_setup_py'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extensions ['ignore', 'ignore_ament_install']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extension 'ignore'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extension 'ignore_ament_install'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extensions ['colcon_pkg']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extension 'colcon_pkg'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extensions ['colcon_meta']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extension 'colcon_meta'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extensions ['ros']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extension 'ros'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extensions ['cmake', 'python']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extension 'cmake'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extension 'python'
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extensions ['python_setup_py']
+[0.164s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Right) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extension 'ignore_ament_install'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extensions ['colcon_pkg']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extension 'colcon_pkg'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extensions ['colcon_meta']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extension 'colcon_meta'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extensions ['ros']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extension 'ros'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extensions ['cmake', 'python']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extension 'cmake'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extension 'python'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extensions ['python_setup_py']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(archive/Direction/Up) by extension 'python_setup_py'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.165s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) ignored
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extensions ['ignore', 'ignore_ament_install']
+[0.166s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extension 'ignore'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extension 'ignore_ament_install'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extensions ['colcon_pkg']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extension 'colcon_pkg'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extensions ['colcon_meta']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extension 'colcon_meta'
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extensions ['ros']
+[0.167s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_bt_core) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/tsb_bt_core' with type 'ros.ament_cmake' and name 'tsb_bt_core'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extensions ['ignore', 'ignore_ament_install']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extension 'ignore'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extension 'ignore_ament_install'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extensions ['colcon_pkg']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extension 'colcon_pkg'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extensions ['colcon_meta']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extension 'colcon_meta'
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extensions ['ros']
+[0.169s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/tsb_cv_brain) by extension 'ros'
+[0.169s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/tsb_cv_brain' with type 'ros.ament_python' and name 'tsb_cv_brain'
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.189s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.190s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/joao/TSB/recrutamento2026/install
+[0.191s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 274 installed packages in /opt/ros/humble
+[0.192s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON~']'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'cmake_clean_first' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'cmake_force_configure' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'ament_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'catkin_cmake_args' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_cv_brain' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.213s] DEBUG:colcon.colcon_core.verb:Building package 'tsb_cv_brain' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON~'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain', 'merge_install': False, 'path': '/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_cv_brain', 'symlink_install': True, 'test_result_base': None}
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'cmake_args' from command line to '['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON~']'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'cmake_target' from command line to 'None'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'cmake_clean_cache' from command line to 'False'
+[0.213s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'cmake_clean_first' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'cmake_force_configure' from command line to 'False'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'ament_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'catkin_cmake_args' from command line to 'None'
+[0.214s] Level 5:colcon.colcon_core.verb:set package 'tsb_bt_core' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.214s] DEBUG:colcon.colcon_core.verb:Building package 'tsb_bt_core' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_EXPORT_COMPILE_COMMANDS=ON~'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/joao/TSB/recrutamento2026/install/tsb_bt_core', 'merge_install': False, 'path': '/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core', 'symlink_install': True, 'test_result_base': None}
+[0.214s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.214s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.215s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_cv_brain' with build type 'ament_python'
+[0.215s] Level 1:colcon.colcon_core.shell:create_environment_hook('tsb_cv_brain', 'ament_prefix_path')
+[0.216s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.216s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/hook/ament_prefix_path.ps1'
+[0.217s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/hook/ament_prefix_path.dsv'
+[0.217s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/hook/ament_prefix_path.sh'
+[0.217s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.217s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.394s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_cv_brain'
+[0.394s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.394s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.585s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools commands: symlink_data, build_py, build_clib, check, dist_info, install_lib, bdist_wheel, egg_info, install_egg_info, bdist_dumb, alias, build, install_scripts, test, build_ext, upload, install, saveopts, develop, build_scripts, easy_install, upload_docs, install_headers, rotate, install_data, bdist, sdist, bdist_egg, clean, bdist_rpm, register, setopt
+[0.740s] DEBUG:colcon.colcon_core.task.python.build:Available setuptools 'develop' options: --build-directory, --local-snapshots-ok, --allow-hosts, --editable, --no-user-cfg, --quiet, --egg-path, --index-url, --record, --force-installation-into-system-dir, --no-deps, --verbose, --always-unzip, --zip-ok, --find-links, --install-layout, --user, --multi-version, --no-find-links, --site-dirs, --optimize, --exclude-scripts, --upgrade, --always-copy, --dry-run, --uninstall, --prefix, --script-dir, --install-dir, --version, --help
+[0.743s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain': PYTHONPATH=/home/joao/TSB/recrutamento2026/build/tsb_cv_brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joao/TSB/recrutamento2026/build/tsb_cv_brain/build --no-deps symlink_data
+[0.986s] Level 1:colcon.colcon_core.shell:create_environment_hook('tsb_cv_brain', 'pythonpath_develop')
+[0.987s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath_develop.ps1'
+[0.987s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain' returned '0': PYTHONPATH=/home/joao/TSB/recrutamento2026/build/tsb_cv_brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/joao/TSB/recrutamento2026/build/tsb_cv_brain/build --no-deps symlink_data
+[0.987s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath_develop.dsv'
+[0.988s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath_develop.sh'
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain' for CMake module files
+[0.989s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain' for CMake config files
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib'
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/bin'
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/pkgconfig/tsb_cv_brain.pc'
+[0.990s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages'
+[0.990s] Level 1:colcon.colcon_core.shell:create_environment_hook('tsb_cv_brain', 'pythonpath')
+[0.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath.ps1'
+[0.990s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath.dsv'
+[0.990s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath.sh'
+[0.991s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/bin'
+[0.991s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tsb_cv_brain)
+[0.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/package.ps1'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/package.dsv'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/package.sh'
+[0.992s] INFO:colcon.colcon_core.shell:Creating package script '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/package.bash'
+[0.993s] INFO:colcon.colcon_core.shell:Creating package script '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/package.zsh'
+[0.993s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/colcon-core/packages/tsb_cv_brain)
+[0.993s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core' with build type 'ament_cmake'
+[0.993s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core'
+[0.993s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.993s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.000s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble /usr/bin/cmake /home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core -DCMAKE_EXPORT_COMPILE_COMMANDS=ON~ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/joao/TSB/recrutamento2026/install/tsb_bt_core
+[1.380s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core' returned '0': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble /usr/bin/cmake /home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core -DCMAKE_EXPORT_COMPILE_COMMANDS=ON~ -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/joao/TSB/recrutamento2026/install/tsb_bt_core
+[1.381s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble /usr/bin/cmake --build /home/joao/TSB/recrutamento2026/build/tsb_bt_core -- -j20 -l20
+[5.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core' returned '2': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble /usr/bin/cmake --build /home/joao/TSB/recrutamento2026/build/tsb_bt_core -- -j20 -l20
+[5.385s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(tsb_bt_core)
+[5.385s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_bt_core' for CMake module files
+[5.386s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_bt_core' for CMake config files
+[5.386s] Level 1:colcon.colcon_core.shell:create_environment_hook('tsb_bt_core', 'cmake_prefix_path')
+[5.386s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/hook/cmake_prefix_path.ps1'
+[5.387s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/hook/cmake_prefix_path.dsv'
+[5.387s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/hook/cmake_prefix_path.sh'
+[5.388s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/lib'
+[5.388s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/bin'
+[5.388s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/lib/pkgconfig/tsb_bt_core.pc'
+[5.388s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/lib/python3.10/site-packages'
+[5.388s] Level 1:colcon.colcon_core.environment:checking '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/bin'
+[5.389s] INFO:colcon.colcon_core.shell:Creating package script '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.ps1'
+[5.389s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.dsv'
+[5.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.sh'
+[5.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.bash'
+[5.390s] INFO:colcon.colcon_core.shell:Creating package script '/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.zsh'
+[5.391s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/colcon-core/packages/tsb_bt_core)
+[5.401s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.401s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.401s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[5.402s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.405s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.405s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.405s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.412s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.413s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joao/TSB/recrutamento2026/install/local_setup.ps1'
+[5.413s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/joao/TSB/recrutamento2026/install/_local_setup_util_ps1.py'
+[5.414s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joao/TSB/recrutamento2026/install/setup.ps1'
+[5.415s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joao/TSB/recrutamento2026/install/local_setup.sh'
+[5.415s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/joao/TSB/recrutamento2026/install/_local_setup_util_sh.py'
+[5.416s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joao/TSB/recrutamento2026/install/setup.sh'
+[5.416s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joao/TSB/recrutamento2026/install/local_setup.bash'
+[5.416s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joao/TSB/recrutamento2026/install/setup.bash'
+[5.417s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/joao/TSB/recrutamento2026/install/local_setup.zsh'
+[5.417s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/joao/TSB/recrutamento2026/install/setup.zsh'

@@ -1,0 +1,9 @@
+source;share/tsb_cv_brain/hook/pythonpath.ps1
+source;share/tsb_cv_brain/hook/pythonpath.dsv
+source;share/tsb_cv_brain/hook/pythonpath.sh
+source;share/tsb_cv_brain/hook/ament_prefix_path.ps1
+source;share/tsb_cv_brain/hook/ament_prefix_path.dsv
+source;share/tsb_cv_brain/hook/ament_prefix_path.sh
+source;../../build/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath_develop.ps1
+source;../../build/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath_develop.dsv
+source;../../build/tsb_cv_brain/share/tsb_cv_brain/hook/pythonpath_develop.sh

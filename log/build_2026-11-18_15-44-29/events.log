@@ -1,0 +1,109 @@
+[0.000000] (-) TimerEvent: {}
+[0.000491] (-) JobUnselected: {'identifier': 'tsb_cv_brain'}
+[0.000534] (tsb_bt_core) JobQueued: {'identifier': 'tsb_bt_core', 'dependencies': OrderedDict([('tsb_cv_brain', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain')])}
+[0.000561] (tsb_bt_core) JobStarted: {'identifier': 'tsb_bt_core'}
+[0.008870] (tsb_bt_core) JobProgress: {'identifier': 'tsb_bt_core', 'progress': 'cmake'}
+[0.010070] (tsb_bt_core) JobProgress: {'identifier': 'tsb_bt_core', 'progress': 'build'}
+[0.010660] (tsb_bt_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', '--', '-j20', '-l20'], 'cwd': '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joao'), ('LC_TIME', 'pt_PT.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/joao/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joao'), ('CHROME_DESKTOP', 'code_code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.143.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/273/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/joao/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('LC_MONETARY', 'pt_PT.UTF-8'), ('LC_CTYPE', 'pt_PT.UTF-8'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1883'), ('BUNDLED_DEBUGPY_PATH', '/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=96163cee9cb70cba5887259c6afc6761'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'joao'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'joao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/joao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/code/273/usr/share/code/bin/copilot-shim'), ('SESSION_MANAGER', 'local/vhagar:@/tmp/.ICE-unix/1883,unix/vhagar:/tmp/.ICE-unix/1883'), ('GTK_EXE_PREFIX', '/snap/code/273/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_PT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/378dc877_c24c_407d_9f2f_a52ee9897ba9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/273/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a7eec2b375607f3f.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/joao/.config/Code/User/workspaceStorage/e0b2ce8dc329bead35efb1d4b44f8671/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'pt_PT.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A21QY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/joao/snap/code/273/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_PT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'pt_PT.UTF-8'), ('LC_IDENTIFICATION', 'pt_PT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '1fc6a81af014ac594fedf95ad7e03c5e'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=96163cee9cb70cba5887259c6afc6761'), ('XDG_DATA_DIRS', '/home/joao/snap/code/273/.local/share:/home/joao/snap/code/273:/snap/code/273/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_PT.UTF-8'), ('LC_PAPER', 'pt_PT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble')]), 'shell': False}
+[0.081628] (tsb_bt_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target bt_executor\x1b[0m\n'}
+[0.099916] (-) TimerEvent: {}
+[0.114815] (tsb_bt_core) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o\x1b[0m\n'}
+[0.200160] (-) TimerEvent: {}
+[0.300534] (-) TimerEvent: {}
+[0.401047] (-) TimerEvent: {}
+[0.501293] (-) TimerEvent: {}
+[0.601602] (-) TimerEvent: {}
+[0.701838] (-) TimerEvent: {}
+[0.802207] (-) TimerEvent: {}
+[0.902592] (-) TimerEvent: {}
+[1.002916] (-) TimerEvent: {}
+[1.103363] (-) TimerEvent: {}
+[1.203708] (-) TimerEvent: {}
+[1.304007] (-) TimerEvent: {}
+[1.404267] (-) TimerEvent: {}
+[1.504557] (-) TimerEvent: {}
+[1.604813] (-) TimerEvent: {}
+[1.705067] (-) TimerEvent: {}
+[1.805357] (-) TimerEvent: {}
+[1.905617] (-) TimerEvent: {}
+[2.005880] (-) TimerEvent: {}
+[2.106278] (-) TimerEvent: {}
+[2.206672] (-) TimerEvent: {}
+[2.307048] (-) TimerEvent: {}
+[2.407426] (-) TimerEvent: {}
+[2.507743] (-) TimerEvent: {}
+[2.608135] (-) TimerEvent: {}
+[2.708524] (-) TimerEvent: {}
+[2.808931] (-) TimerEvent: {}
+[2.909321] (-) TimerEvent: {}
+[3.009724] (-) TimerEvent: {}
+[3.109984] (-) TimerEvent: {}
+[3.210378] (-) TimerEvent: {}
+[3.310776] (-) TimerEvent: {}
+[3.411071] (-) TimerEvent: {}
+[3.511459] (-) TimerEvent: {}
+[3.611872] (-) TimerEvent: {}
+[3.712154] (-) TimerEvent: {}
+[3.812553] (-) TimerEvent: {}
+[3.912944] (-) TimerEvent: {}
+[4.013336] (-) TimerEvent: {}
+[4.113813] (-) TimerEvent: {}
+[4.214198] (-) TimerEvent: {}
+[4.314599] (-) TimerEvent: {}
+[4.414859] (-) TimerEvent: {}
+[4.515106] (-) TimerEvent: {}
+[4.615441] (-) TimerEvent: {}
+[4.715809] (-) TimerEvent: {}
+[4.816176] (-) TimerEvent: {}
+[4.916515] (-) TimerEvent: {}
+[5.016880] (-) TimerEvent: {}
+[5.117204] (-) TimerEvent: {}
+[5.217558] (-) TimerEvent: {}
+[5.317907] (-) TimerEvent: {}
+[5.418235] (-) TimerEvent: {}
+[5.518562] (-) TimerEvent: {}
+[5.618790] (-) TimerEvent: {}
+[5.719067] (-) TimerEvent: {}
+[5.819389] (-) TimerEvent: {}
+[5.919676] (-) TimerEvent: {}
+[6.020024] (-) TimerEvent: {}
+[6.120371] (-) TimerEvent: {}
+[6.220716] (-) TimerEvent: {}
+[6.321093] (-) TimerEvent: {}
+[6.421359] (-) TimerEvent: {}
+[6.433313] (tsb_bt_core) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable bt_executor\x1b[0m\n'}
+[6.521572] (-) TimerEvent: {}
+[6.621830] (-) TimerEvent: {}
+[6.722093] (-) TimerEvent: {}
+[6.727209] (tsb_bt_core) StdoutLine: {'line': b'[100%] Built target bt_executor\n'}
+[6.738054] (tsb_bt_core) CommandEnded: {'returncode': 0}
+[6.741993] (tsb_bt_core) JobProgress: {'identifier': 'tsb_bt_core', 'progress': 'install'}
+[6.747488] (tsb_bt_core) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core'], 'cwd': '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joao'), ('LC_TIME', 'pt_PT.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/joao/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joao'), ('CHROME_DESKTOP', 'code_code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('TERM_PROGRAM_VERSION', '1.143.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/273/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/joao/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('LC_MONETARY', 'pt_PT.UTF-8'), ('LC_CTYPE', 'pt_PT.UTF-8'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1883'), ('BUNDLED_DEBUGPY_PATH', '/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=96163cee9cb70cba5887259c6afc6761'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'joao'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'joao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/joao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/code/273/usr/share/code/bin/copilot-shim'), ('SESSION_MANAGER', 'local/vhagar:@/tmp/.ICE-unix/1883,unix/vhagar:/tmp/.ICE-unix/1883'), ('GTK_EXE_PREFIX', '/snap/code/273/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_PT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/378dc877_c24c_407d_9f2f_a52ee9897ba9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/273/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a7eec2b375607f3f.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/joao/.config/Code/User/workspaceStorage/e0b2ce8dc329bead35efb1d4b44f8671/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'pt_PT.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A21QY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/joao/snap/code/273/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_PT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'pt_PT.UTF-8'), ('LC_IDENTIFICATION', 'pt_PT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '1fc6a81af014ac594fedf95ad7e03c5e'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=96163cee9cb70cba5887259c6afc6761'), ('XDG_DATA_DIRS', '/home/joao/snap/code/273/.local/share:/home/joao/snap/code/273:/snap/code/273/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_PT.UTF-8'), ('LC_PAPER', 'pt_PT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble')]), 'shell': False}
+[6.753698] (tsb_bt_core) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.754364] (tsb_bt_core) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[6.754543] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/lib/tsb_bt_core/bt_executor\n'}
+[6.755253] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp\n'}
+[6.755287] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp\n'}
+[6.755432] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/behavior_trees/tree.xml\n'}
+[6.755615] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/behavior_trees/tsb_challenge.btproj\n'}
+[6.755827] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/launch/challenge.launch.py\n'}
+[6.755899] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/package_run_dependencies/tsb_bt_core\n'}
+[6.756068] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/parent_prefix_path/tsb_bt_core\n'}
+[6.756148] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/ament_prefix_path.sh\n'}
+[6.756352] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/ament_prefix_path.dsv\n'}
+[6.756428] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/path.sh\n'}
+[6.756564] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/path.dsv\n'}
+[6.756744] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.bash\n'}
+[6.756820] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.sh\n'}
+[6.756936] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.zsh\n'}
+[6.757017] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.dsv\n'}
+[6.757104] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.dsv\n'}
+[6.763618] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/packages/tsb_bt_core\n'}
+[6.763699] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[6.763742] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[6.763879] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/tsb_bt_coreConfig.cmake\n'}
+[6.763958] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/tsb_bt_coreConfig-version.cmake\n'}
+[6.764045] (tsb_bt_core) StdoutLine: {'line': b'-- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.xml\n'}
+[6.765650] (tsb_bt_core) CommandEnded: {'returncode': 0}
+[6.783430] (tsb_bt_core) JobEnded: {'identifier': 'tsb_bt_core', 'rc': 0}
+[6.784126] (-) EventReactorShutdown: {}

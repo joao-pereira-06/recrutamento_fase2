@@ -1,0 +1,10 @@
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/uninstall.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/tsb_bt_core_uninstall.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/bt_executor.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/test.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/edit_cache.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/rebuild_cache.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/list_install_components.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/install.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/install/local.dir
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/CMakeFiles/install/strip.dir

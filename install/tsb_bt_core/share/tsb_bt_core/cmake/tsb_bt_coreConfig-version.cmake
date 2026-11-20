@@ -1,0 +1,1 @@
+/home/joao/TSB/recrutamento2026/build/tsb_bt_core/ament_cmake_core/tsb_bt_coreConfig-version.cmake

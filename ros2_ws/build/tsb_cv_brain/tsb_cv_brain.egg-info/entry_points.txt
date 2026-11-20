@@ -1,0 +1,3 @@
+[console_scripts]
+vision_node = tsb_cv_brain.vision_node:main
+

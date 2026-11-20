@@ -1,0 +1,13 @@
+build/
+install/
+log/
+__pycache__/
+*.py[cod]
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+archive/

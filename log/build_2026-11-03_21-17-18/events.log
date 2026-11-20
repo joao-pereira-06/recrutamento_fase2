@@ -1,0 +1,241 @@
+[0.000000] (-) TimerEvent: {}
+[0.000398] (tsb_cv_brain) JobQueued: {'identifier': 'tsb_cv_brain', 'dependencies': OrderedDict()}
+[0.000429] (tsb_bt_core) JobQueued: {'identifier': 'tsb_bt_core', 'dependencies': OrderedDict([('tsb_cv_brain', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain')])}
+[0.000979] (tsb_cv_brain) JobStarted: {'identifier': 'tsb_cv_brain'}
+[0.100096] (-) TimerEvent: {}
+[0.200499] (-) TimerEvent: {}
+[0.300888] (-) TimerEvent: {}
+[0.401323] (-) TimerEvent: {}
+[0.501785] (-) TimerEvent: {}
+[0.602097] (-) TimerEvent: {}
+[0.702476] (-) TimerEvent: {}
+[0.802925] (-) TimerEvent: {}
+[0.869764] (tsb_cv_brain) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain/build', '--no-deps', 'symlink_data'], 'cwd': '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joao'), ('LC_TIME', 'pt_PT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joao'), ('OLDPWD', '/home/joao'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_PT.UTF-8'), ('LC_CTYPE', 'pt_PT.UTF-8'), ('SYSTEMD_EXEC_PID', '2080'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'joao'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/vhagar:@/tmp/.ICE-unix/1855,unix/vhagar:/tmp/.ICE-unix/1855'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_PT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b5c41bb9_a673_4511_a86d_577653815bbb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_PT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IAEY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_PT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_PT.UTF-8'), ('LC_IDENTIFICATION', 'pt_PT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_PT.UTF-8'), ('LC_PAPER', 'pt_PT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800')]), 'shell': False}
+[0.903006] (-) TimerEvent: {}
+[1.003385] (-) TimerEvent: {}
+[1.103817] (-) TimerEvent: {}
+[1.123166] (tsb_cv_brain) StdoutLine: {'line': b'running develop\n'}
+[1.204031] (-) TimerEvent: {}
+[1.262690] (tsb_cv_brain) StdoutLine: {'line': b'running egg_info\n'}
+[1.263025] (tsb_cv_brain) StdoutLine: {'line': b'creating tsb_cv_brain.egg-info\n'}
+[1.263271] (tsb_cv_brain) StdoutLine: {'line': b'writing tsb_cv_brain.egg-info/PKG-INFO\n'}
+[1.263340] (tsb_cv_brain) StdoutLine: {'line': b'writing dependency_links to tsb_cv_brain.egg-info/dependency_links.txt\n'}
+[1.263393] (tsb_cv_brain) StdoutLine: {'line': b'writing entry points to tsb_cv_brain.egg-info/entry_points.txt\n'}
+[1.263451] (tsb_cv_brain) StdoutLine: {'line': b'writing requirements to tsb_cv_brain.egg-info/requires.txt\n'}
+[1.263504] (tsb_cv_brain) StdoutLine: {'line': b'writing top-level names to tsb_cv_brain.egg-info/top_level.txt\n'}
+[1.263676] (tsb_cv_brain) StdoutLine: {'line': b"writing manifest file 'tsb_cv_brain.egg-info/SOURCES.txt'\n"}
+[1.265033] (tsb_cv_brain) StdoutLine: {'line': b"reading manifest file 'tsb_cv_brain.egg-info/SOURCES.txt'\n"}
+[1.265558] (tsb_cv_brain) StdoutLine: {'line': b"writing manifest file 'tsb_cv_brain.egg-info/SOURCES.txt'\n"}
+[1.266864] (tsb_cv_brain) StdoutLine: {'line': b'running build_ext\n'}
+[1.267015] (tsb_cv_brain) StdoutLine: {'line': b'Creating /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages/tsb-cv-brain.egg-link (link to .)\n'}
+[1.267831] (tsb_cv_brain) StdoutLine: {'line': b'Installing vision_node script to /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/tsb_cv_brain\n'}
+[1.267963] (tsb_cv_brain) StdoutLine: {'line': b'\n'}
+[1.268025] (tsb_cv_brain) StdoutLine: {'line': b'Installed /home/joao/TSB/recrutamento2026/build/tsb_cv_brain\n'}
+[1.268079] (tsb_cv_brain) StdoutLine: {'line': b'running symlink_data\n'}
+[1.268250] (tsb_cv_brain) StdoutLine: {'line': b'creating /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/ament_index\n'}
+[1.268368] (tsb_cv_brain) StdoutLine: {'line': b'creating /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/ament_index/resource_index\n'}
+[1.268427] (tsb_cv_brain) StdoutLine: {'line': b'creating /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/ament_index/resource_index/packages\n'}
+[1.268476] (tsb_cv_brain) StdoutLine: {'line': b'symbolically linking /home/joao/TSB/recrutamento2026/build/tsb_cv_brain/resource/tsb_cv_brain -> /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/ament_index/resource_index/packages\n'}
+[1.268525] (tsb_cv_brain) StdoutLine: {'line': b'symbolically linking /home/joao/TSB/recrutamento2026/build/tsb_cv_brain/package.xml -> /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain\n'}
+[1.268572] (tsb_cv_brain) StdoutLine: {'line': b'creating /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/models\n'}
+[1.293594] (tsb_cv_brain) CommandEnded: {'returncode': 0}
+[1.304320] (-) TimerEvent: {}
+[1.305423] (tsb_cv_brain) JobEnded: {'identifier': 'tsb_cv_brain', 'rc': 0}
+[1.306049] (tsb_bt_core) JobStarted: {'identifier': 'tsb_bt_core'}
+[1.313932] (tsb_bt_core) JobProgress: {'identifier': 'tsb_bt_core', 'progress': 'cmake'}
+[1.315960] (tsb_bt_core) Command: {'cmd': ['/usr/bin/cmake', '/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/joao/TSB/recrutamento2026/install/tsb_bt_core'], 'cwd': '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joao'), ('LC_TIME', 'pt_PT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joao'), ('OLDPWD', '/home/joao'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_PT.UTF-8'), ('LC_CTYPE', 'pt_PT.UTF-8'), ('SYSTEMD_EXEC_PID', '2080'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'joao'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/vhagar:@/tmp/.ICE-unix/1855,unix/vhagar:/tmp/.ICE-unix/1855'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_PT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b5c41bb9_a673_4511_a86d_577653815bbb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_PT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IAEY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_PT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_PT.UTF-8'), ('LC_IDENTIFICATION', 'pt_PT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_PT.UTF-8'), ('LC_PAPER', 'pt_PT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.404460] (-) TimerEvent: {}
+[1.442856] (tsb_bt_core) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.453423] (tsb_bt_core) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.504607] (-) TimerEvent: {}
+[1.548596] (tsb_bt_core) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.556930] (tsb_bt_core) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.558250] (tsb_bt_core) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.559297] (tsb_bt_core) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.561631] (tsb_bt_core) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.604845] (-) TimerEvent: {}
+[1.705285] (-) TimerEvent: {}
+[1.746531] (tsb_bt_core) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.805524] (-) TimerEvent: {}
+[1.834577] (tsb_bt_core) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[1.864769] (tsb_bt_core) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.905786] (-) TimerEvent: {}
+[1.910588] (tsb_bt_core) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.915476] (tsb_bt_core) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.925762] (tsb_bt_core) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.941152] (tsb_bt_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.959301] (tsb_bt_core) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.006065] (-) TimerEvent: {}
+[2.010354] (tsb_bt_core) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.013260] (tsb_bt_core) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.106248] (-) TimerEvent: {}
+[2.127931] (tsb_bt_core) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[2.163363] (tsb_bt_core) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[2.206154] (tsb_bt_core) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.206428] (-) TimerEvent: {}
+[2.216172] (tsb_bt_core) StdoutLine: {'line': b'-- Looking for C++ include pthread.h\n'}
+[2.306674] (-) TimerEvent: {}
+[2.324041] (tsb_bt_core) StdoutLine: {'line': b'-- Looking for C++ include pthread.h - found\n'}
+[2.324356] (tsb_bt_core) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[2.406944] (-) TimerEvent: {}
+[2.430551] (tsb_bt_core) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[2.432549] (tsb_bt_core) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.506694] (tsb_bt_core) StdoutLine: {'line': b'-- Found geometry_msgs: 4.9.2 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.507017] (-) TimerEvent: {}
+[2.525271] (tsb_bt_core) StdoutLine: {'line': b'-- Found behaviortree_cpp: 4.10.0 (/opt/ros/humble/share/behaviortree_cpp/cmake)\n'}
+[2.531445] (tsb_bt_core) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.607264] (-) TimerEvent: {}
+[2.620294] (tsb_bt_core) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[2.620529] (tsb_bt_core) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include>\n'}
+[2.620652] (tsb_bt_core) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[2.621116] (tsb_bt_core) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.621699] (tsb_bt_core) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.622340] (tsb_bt_core) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.623136] (tsb_bt_core) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.626119] (tsb_bt_core) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.634355] (tsb_bt_core) StdoutLine: {'line': b'-- Generating done\n'}
+[2.637649] (tsb_bt_core) StdoutLine: {'line': b'-- Build files have been written to: /home/joao/TSB/recrutamento2026/build/tsb_bt_core\n'}
+[2.645546] (tsb_bt_core) CommandEnded: {'returncode': 0}
+[2.647672] (tsb_bt_core) JobProgress: {'identifier': 'tsb_bt_core', 'progress': 'build'}
+[2.648021] (tsb_bt_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', '--', '-j20', '-l20'], 'cwd': '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joao'), ('LC_TIME', 'pt_PT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joao'), ('OLDPWD', '/home/joao'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_PT.UTF-8'), ('LC_CTYPE', 'pt_PT.UTF-8'), ('SYSTEMD_EXEC_PID', '2080'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'joao'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/vhagar:@/tmp/.ICE-unix/1855,unix/vhagar:/tmp/.ICE-unix/1855'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_PT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b5c41bb9_a673_4511_a86d_577653815bbb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_PT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IAEY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_PT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_PT.UTF-8'), ('LC_IDENTIFICATION', 'pt_PT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_PT.UTF-8'), ('LC_PAPER', 'pt_PT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.707424] (-) TimerEvent: {}
+[2.711010] (tsb_bt_core) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o\x1b[0m\n'}
+[2.807667] (-) TimerEvent: {}
+[2.908166] (-) TimerEvent: {}
+[3.008633] (-) TimerEvent: {}
+[3.109122] (-) TimerEvent: {}
+[3.209605] (-) TimerEvent: {}
+[3.310114] (-) TimerEvent: {}
+[3.410601] (-) TimerEvent: {}
+[3.511101] (-) TimerEvent: {}
+[3.611574] (-) TimerEvent: {}
+[3.712074] (-) TimerEvent: {}
+[3.812544] (-) TimerEvent: {}
+[3.913061] (-) TimerEvent: {}
+[4.013540] (-) TimerEvent: {}
+[4.114091] (-) TimerEvent: {}
+[4.214579] (-) TimerEvent: {}
+[4.315121] (-) TimerEvent: {}
+[4.415659] (-) TimerEvent: {}
+[4.516162] (-) TimerEvent: {}
+[4.616637] (-) TimerEvent: {}
+[4.717129] (-) TimerEvent: {}
+[4.817505] (-) TimerEvent: {}
+[4.917988] (-) TimerEvent: {}
+[5.018465] (-) TimerEvent: {}
+[5.119073] (-) TimerEvent: {}
+[5.219500] (-) TimerEvent: {}
+[5.319915] (-) TimerEvent: {}
+[5.420307] (-) TimerEvent: {}
+[5.520698] (-) TimerEvent: {}
+[5.621111] (-) TimerEvent: {}
+[5.721504] (-) TimerEvent: {}
+[5.821915] (-) TimerEvent: {}
+[5.922322] (-) TimerEvent: {}
+[6.022723] (-) TimerEvent: {}
+[6.123120] (-) TimerEvent: {}
+[6.223518] (-) TimerEvent: {}
+[6.323954] (-) TimerEvent: {}
+[6.424417] (-) TimerEvent: {}
+[6.524827] (-) TimerEvent: {}
+[6.625225] (-) TimerEvent: {}
+[6.725617] (-) TimerEvent: {}
+[6.826043] (-) TimerEvent: {}
+[6.926431] (-) TimerEvent: {}
+[7.026842] (-) TimerEvent: {}
+[7.127136] (-) TimerEvent: {}
+[7.227466] (-) TimerEvent: {}
+[7.327866] (-) TimerEvent: {}
+[7.428169] (-) TimerEvent: {}
+[7.528492] (-) TimerEvent: {}
+[7.628900] (-) TimerEvent: {}
+[7.729194] (-) TimerEvent: {}
+[7.829586] (-) TimerEvent: {}
+[7.930002] (-) TimerEvent: {}
+[8.030403] (-) TimerEvent: {}
+[8.130792] (-) TimerEvent: {}
+[8.231093] (-) TimerEvent: {}
+[8.331420] (-) TimerEvent: {}
+[8.431835] (-) TimerEvent: {}
+[8.532132] (-) TimerEvent: {}
+[8.632528] (-) TimerEvent: {}
+[8.732942] (-) TimerEvent: {}
+[8.833345] (-) TimerEvent: {}
+[8.933758] (-) TimerEvent: {}
+[9.034289] (-) TimerEvent: {}
+[9.134713] (-) TimerEvent: {}
+[9.235071] (-) TimerEvent: {}
+[9.335466] (-) TimerEvent: {}
+[9.435863] (-) TimerEvent: {}
+[9.536161] (-) TimerEvent: {}
+[9.636557] (-) TimerEvent: {}
+[9.736870] (-) TimerEvent: {}
+[9.837201] (-) TimerEvent: {}
+[9.937596] (-) TimerEvent: {}
+[10.037968] (-) TimerEvent: {}
+[10.138302] (-) TimerEvent: {}
+[10.238661] (-) TimerEvent: {}
+[10.339122] (-) TimerEvent: {}
+[10.439520] (-) TimerEvent: {}
+[10.539932] (-) TimerEvent: {}
+[10.640274] (-) TimerEvent: {}
+[10.740720] (-) TimerEvent: {}
+[10.841152] (-) TimerEvent: {}
+[10.941568] (-) TimerEvent: {}
+[11.041973] (-) TimerEvent: {}
+[11.142380] (-) TimerEvent: {}
+[11.242786] (-) TimerEvent: {}
+[11.343201] (-) TimerEvent: {}
+[11.443535] (-) TimerEvent: {}
+[11.543927] (-) TimerEvent: {}
+[11.644258] (-) TimerEvent: {}
+[11.744659] (-) TimerEvent: {}
+[11.844979] (-) TimerEvent: {}
+[11.945321] (-) TimerEvent: {}
+[12.045717] (-) TimerEvent: {}
+[12.146025] (-) TimerEvent: {}
+[12.246360] (-) TimerEvent: {}
+[12.346764] (-) TimerEvent: {}
+[12.447174] (-) TimerEvent: {}
+[12.547465] (-) TimerEvent: {}
+[12.647884] (-) TimerEvent: {}
+[12.748148] (-) TimerEvent: {}
+[12.848433] (-) TimerEvent: {}
+[12.948772] (-) TimerEvent: {}
+[12.973910] (tsb_bt_core) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable bt_executor\x1b[0m\n'}
+[13.049004] (-) TimerEvent: {}
+[13.149315] (-) TimerEvent: {}
+[13.249199] (tsb_bt_core) StdoutLine: {'line': b'[100%] Built target bt_executor\n'}
+[13.249349] (-) TimerEvent: {}
+[13.260024] (tsb_bt_core) CommandEnded: {'returncode': 0}
+[13.260969] (tsb_bt_core) JobProgress: {'identifier': 'tsb_bt_core', 'progress': 'install'}
+[13.266463] (tsb_bt_core) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core'], 'cwd': '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joao'), ('LC_TIME', 'pt_PT.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joao'), ('OLDPWD', '/home/joao'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pt_PT.UTF-8'), ('LC_CTYPE', 'pt_PT.UTF-8'), ('SYSTEMD_EXEC_PID', '2080'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'joao'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'joao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/vhagar:@/tmp/.ICE-unix/1855,unix/vhagar:/tmp/.ICE-unix/1855'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_PT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b5c41bb9_a673_4511_a86d_577653815bbb'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pt_PT.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0IAEY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.212'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_PT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pt_PT.UTF-8'), ('LC_IDENTIFICATION', 'pt_PT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_PT.UTF-8'), ('LC_PAPER', 'pt_PT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.270968] (tsb_bt_core) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.271142] (tsb_bt_core) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[13.271235] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/lib/tsb_bt_core/bt_executor\n'}
+[13.276560] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp\n'}
+[13.283074] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp\n'}
+[13.289206] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/behavior_trees/tree.xml\n'}
+[13.295923] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/behavior_trees/tsb_challenge.btproj\n'}
+[13.302627] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/launch/challenge.launch.py\n'}
+[13.308536] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/package_run_dependencies/tsb_bt_core\n'}
+[13.316920] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/parent_prefix_path/tsb_bt_core\n'}
+[13.322202] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/ament_prefix_path.sh\n'}
+[13.327227] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/ament_prefix_path.dsv\n'}
+[13.332923] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/path.sh\n'}
+[13.340732] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/path.dsv\n'}
+[13.346999] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.bash\n'}
+[13.349529] (-) TimerEvent: {}
+[13.352083] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.sh\n'}
+[13.358236] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.zsh\n'}
+[13.364810] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.dsv\n'}
+[13.371670] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.dsv\n'}
+[13.381617] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/packages/tsb_bt_core\n'}
+[13.388724] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.394200] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.399973] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/tsb_bt_coreConfig.cmake\n'}
+[13.406435] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/tsb_bt_coreConfig-version.cmake\n'}
+[13.411081] (tsb_bt_core) StdoutLine: {'line': b'-- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.xml\n'}
+[13.418504] (tsb_bt_core) CommandEnded: {'returncode': 0}
+[13.425763] (tsb_bt_core) JobEnded: {'identifier': 'tsb_bt_core', 'rc': 0}
+[13.426345] (-) EventReactorShutdown: {}

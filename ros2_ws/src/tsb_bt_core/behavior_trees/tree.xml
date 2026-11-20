@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" main_tree_to_execute="MainTree">
+
+  <!--
+    DONE (candidate): configure the ports of the two actions below, either here
+    or in Groot2 (e.g. share the command through a blackboard entry such as
+    {vision_command}). You may also restructure the tree.
+  -->
+  <BehaviorTree ID="MainTree">
+    <Sequence name="DrawShapeMission">
+
+    <!-- guardar as variaveis no blackboard-->
+    <SetBlackboard output_key="vel_frente" value = "2.0"/>
+    <SetBlackboard output_key="tempo_lado" value = "1.5"/>
+    <SetBlackboard output_key="vel_rotacao" value = "1.5708"/>  <!-- pi/2 -->
+    <SetBlackboard output_key="tempo_rotacao" value = "1.0"/>
+
+    <!-- 2. Desenhar um Quadrado (Repete 4x: Frente + Rodar 90 graus) -->
+      <Repeat num_cycles="4">
+        <Sequence name="DrawSquareSide">
+          <MoveTurtle name="MoveSide" command="FORWARD" speed="{vel_frente}" duration="{tempo_lado}"/>
+          <MoveTurtle name="Turn90Deg" command="LEFT" speed="{vel_rotacao}" duration="{tempo_rotacao}"/>
+        </Sequence>
+      </Repeat>
+
+      <!-- 3. Atualizar Blackboard e Desenhar um Círculo -->
+      <SetBlackboard output_key="vel_circulo" value="2.0"/>
+      <!-- 2*pi / 2.0 rad/s = 3.1416 segundos para dar uma volta completa de 360 graus -->
+      <SetBlackboard output_key="tempo_circulo" value="3.15"/>
+
+      <MoveTurtle name="DrawCircle" command="CIRCLE" speed="{vel_circulo}" duration="{tempo_circulo}"/>
+
+    </Sequence>
+  </BehaviorTree>
+
+  <!-- Description of Node Models (used by Groot2). Keep in sync with the C++
+       providedPorts(); run bt_executor with -p print_tree_nodes_model:=true
+       to print the up-to-date model. -->
+<!-- Modelo dos Nós para o Groot2 -->
+  <TreeNodesModel>
+    <Action ID="GetVisionCommand">
+      <output_port name="command" type="std::string">Latest command received from the vision node</output_port>
+    </Action>
+    <Action ID="MoveTurtle">
+      <input_port name="command" type="std::string" default="FORWARD">Direction: FORWARD | LEFT | RIGHT | CIRCLE</input_port>
+      <input_port name="speed" type="double" default="1.5">Linear or angular speed</input_port>
+      <input_port name="duration" type="double" default="1.0">Duration of the movement in seconds</input_port>
+    </Action>
+  </TreeNodesModel>
+
+</root>

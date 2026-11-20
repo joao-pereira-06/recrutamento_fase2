@@ -1,0 +1,32 @@
+[0.013s] Invoking command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/joao/TSB/recrutamento2026/build/tsb_bt_core -- -j20 -l20
+[0.079s] [ 50%] [32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o[0m
+[11.047s] [100%] [32m[1mLinking CXX executable bt_executor[0m
+[11.516s] [100%] Built target bt_executor
+[11.531s] Invoked command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core' returned '0': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/joao/TSB/recrutamento2026/build/tsb_bt_core -- -j20 -l20
+[11.541s] Invoking command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/joao/TSB/recrutamento2026/build/tsb_bt_core
+[11.550s] -- Install configuration: ""
+[11.550s] -- Execute custom install script
+[11.551s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/lib/tsb_bt_core/bt_executor
+[11.551s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp
+[11.551s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp
+[11.551s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/behavior_trees/tree.xml
+[11.551s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/behavior_trees/tsb_challenge.btproj
+[11.551s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/launch/challenge.launch.py
+[11.552s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/package_run_dependencies/tsb_bt_core
+[11.552s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/parent_prefix_path/tsb_bt_core
+[11.552s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/ament_prefix_path.sh
+[11.552s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/ament_prefix_path.dsv
+[11.552s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/path.sh
+[11.552s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/environment/path.dsv
+[11.552s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.bash
+[11.552s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.sh
+[11.553s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.zsh
+[11.553s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/local_setup.dsv
+[11.553s] -- Symlinking: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.dsv
+[11.561s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/ament_index/resource_index/packages/tsb_bt_core
+[11.561s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/ament_cmake_export_include_directories-extras.cmake
+[11.561s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/ament_cmake_export_dependencies-extras.cmake
+[11.561s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/tsb_bt_coreConfig.cmake
+[11.561s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/cmake/tsb_bt_coreConfig-version.cmake
+[11.561s] -- Up-to-date symlink: /home/joao/TSB/recrutamento2026/install/tsb_bt_core/share/tsb_bt_core/package.xml
+[11.564s] Invoked command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core' returned '0': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/opt/ros/humble PYTHONPATH=/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/joao/TSB/recrutamento2026/build/tsb_bt_core

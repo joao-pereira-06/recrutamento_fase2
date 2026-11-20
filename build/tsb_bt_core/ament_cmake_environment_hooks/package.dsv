@@ -1,0 +1,4 @@
+source;share/tsb_bt_core/local_setup.bash
+source;share/tsb_bt_core/local_setup.dsv
+source;share/tsb_bt_core/local_setup.sh
+source;share/tsb_bt_core/local_setup.zsh

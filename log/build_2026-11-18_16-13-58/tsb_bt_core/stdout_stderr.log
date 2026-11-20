@@ -1,0 +1,33 @@
+[35m[1mConsolidate compiler generated dependencies of target bt_executor[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o[0m
+In file included from [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:15[m[K:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus tsb_bt_core::GetVisionCommand::tick()[m[K’:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:81:10:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd[m[K’ was not declared in this scope
+   81 |     if (![01;31m[Kcmd[m[K.has_value())
+      |          [01;31m[K^~~[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:13[m[K:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:85:53:[m[K [01;31m[Kerror: [m[K‘[01m[Kconst string[m[K’ {aka ‘[01m[Kconst class std::__cxx11::basic_string<char>[m[K’} has no member named ‘[01m[Kc[m[K’
+   85 |         "[%s] waiting for comando on %s...", name().[01;31m[Kc[m[K-str(), kCommandTopic);
+      |                                                     [01;31m[K^[m[K
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:85:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kstr[m[K’ was not declared in this scope; did you mean ‘[01m[KPtr[m[K’?
+   85 |        "[%s] waiting for comando on %s...", name().c-[01;31m[Kstr[m[K(), kCommandTopic);
+      |                                                      [01;31m[K^~~[m[K
+
+In file included from [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:15[m[K:
+[01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:89:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kcmd[m[K’ was not declared in this scope
+   89 |     const std::string & val = [01;31m[Kcmd[m[K.value();
+      |                               [01;31m[K^~~[m[K
+gmake[2]: *** [CMakeFiles/bt_executor.dir/build.make:76: CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_executor.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

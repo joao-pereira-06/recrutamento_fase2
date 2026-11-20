@@ -1,0 +1,85 @@
+[0.000000] (-) TimerEvent: {}
+[0.000346] (-) JobUnselected: {'identifier': 'tsb_cv_brain'}
+[0.000515] (tsb_bt_core) JobQueued: {'identifier': 'tsb_bt_core', 'dependencies': OrderedDict([('tsb_cv_brain', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain')])}
+[0.000560] (tsb_bt_core) JobStarted: {'identifier': 'tsb_bt_core'}
+[0.007357] (tsb_bt_core) JobProgress: {'identifier': 'tsb_bt_core', 'progress': 'cmake'}
+[0.007961] (tsb_bt_core) JobProgress: {'identifier': 'tsb_bt_core', 'progress': 'build'}
+[0.008601] (tsb_bt_core) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', '--', '-j20', '-l20'], 'cwd': '/home/joao/TSB/recrutamento2026/build/tsb_bt_core', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'joao'), ('LC_TIME', 'pt_PT.UTF-8'), ('FONTCONFIG_PATH', '/etc/fonts'), ('GIO_MODULE_DIR', '/home/joao/snap/code/common/.cache/gio-modules'), ('XDG_SESSION_TYPE', 'wayland'), ('GTK_EXE_PREFIX_VSCODE_SNAP_ORIG', ''), ('GDK_BACKEND_VSCODE_SNAP_ORIG', ''), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/joao'), ('CHROME_DESKTOP', 'code_code.desktop'), ('LOCPATH_VSCODE_SNAP_ORIG', ''), ('OLDPWD', '/home/joao/TSB/recrutamento2026'), ('TERM_PROGRAM_VERSION', '1.143.1'), ('DESKTOP_SESSION', 'ubuntu'), ('GTK_PATH', '/snap/code/273/usr/lib/x86_64-linux-gnu/gtk-3.0'), ('GTK_IM_MODULE_FILE', '/home/joao/snap/code/common/.cache/immodules/immodules.cache'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('GSETTINGS_SCHEMA_DIR_VSCODE_SNAP_ORIG', ''), ('LC_MONETARY', 'pt_PT.UTF-8'), ('LC_CTYPE', 'pt_PT.UTF-8'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '1883'), ('BUNDLED_DEBUGPY_PATH', '/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=96163cee9cb70cba5887259c6afc6761'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'joao'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_SESSION_CLASS', 'user'), ('XDG_DATA_DIRS_VSCODE_SNAP_ORIG', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('USERNAME', 'joao'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('FC_FONTATIONS', '1'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/home/joao/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts:/home/joao/.config/Code/User/globalStorage/github.copilot-chat/debugCommand:/snap/code/273/usr/share/code/bin/copilot-shim'), ('SESSION_MANAGER', 'local/vhagar:@/tmp/.ICE-unix/1883,unix/vhagar:/tmp/.ICE-unix/1883'), ('GTK_EXE_PREFIX', '/snap/code/273/usr'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pt_PT.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/378dc877_c24c_407d_9f2f_a52ee9897ba9'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LOCPATH', '/snap/code/273/usr/lib/locale'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/joao/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-a7eec2b375607f3f.txt'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PYTHONSTARTUP', '/home/joao/.config/Code/User/workspaceStorage/e0b2ce8dc329bead35efb1d4b44f8671/ms-python.python/pythonrc.py'), ('LC_TELEPHONE', 'pt_PT.UTF-8'), ('GIO_MODULE_DIR_VSCODE_SNAP_ORIG', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A21QY3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.130'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('GSETTINGS_SCHEMA_DIR', '/home/joao/snap/code/273/.local/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pt_PT.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GTK_PATH_VSCODE_SNAP_ORIG', ''), ('FONTCONFIG_FILE', '/etc/fonts/fonts.conf'), ('GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG', ''), ('LC_MEASUREMENT', 'pt_PT.UTF-8'), ('LC_IDENTIFICATION', 'pt_PT.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/joao/TSB/recrutamento2026/build/tsb_bt_core'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('COPILOT_DEBUG_NONCE', '1fc6a81af014ac594fedf95ad7e03c5e'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=96163cee9cb70cba5887259c6afc6761'), ('XDG_DATA_DIRS', '/home/joao/snap/code/273/.local/share:/home/joao/snap/code/273:/snap/code/273/usr/share:/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/joao/TSB/recrutamento2026/build/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'pt_PT.UTF-8'), ('LC_PAPER', 'pt_PT.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble')]), 'shell': False}
+[0.046234] (tsb_bt_core) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target bt_executor\x1b[0m\n'}
+[0.060707] (tsb_bt_core) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o\x1b[0m\n'}
+[0.099942] (-) TimerEvent: {}
+[0.200216] (-) TimerEvent: {}
+[0.300601] (-) TimerEvent: {}
+[0.400952] (-) TimerEvent: {}
+[0.501389] (-) TimerEvent: {}
+[0.601681] (-) TimerEvent: {}
+[0.702066] (-) TimerEvent: {}
+[0.802347] (-) TimerEvent: {}
+[0.902633] (-) TimerEvent: {}
+[1.002959] (-) TimerEvent: {}
+[1.103219] (-) TimerEvent: {}
+[1.203567] (-) TimerEvent: {}
+[1.303958] (-) TimerEvent: {}
+[1.404217] (-) TimerEvent: {}
+[1.504599] (-) TimerEvent: {}
+[1.605007] (-) TimerEvent: {}
+[1.705406] (-) TimerEvent: {}
+[1.805726] (-) TimerEvent: {}
+[1.860946] (tsb_bt_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:15\x1b[m\x1b[K:\n'}
+[1.861105] (tsb_bt_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual BT::NodeStatus tsb_bt_core::GetVisionCommand::tick()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.861145] (tsb_bt_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:81:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.861174] (tsb_bt_core) StderrLine: {'line': b'   81 |     if (!\x1b[01;31m\x1b[Kcmd\x1b[m\x1b[K.has_value())\n'}
+[1.861202] (tsb_bt_core) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.861650] (tsb_bt_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24\x1b[m\x1b[K,\n'}
+[1.861721] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.861752] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24\x1b[m\x1b[K,\n'}
+[1.861781] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.861808] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.861834] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.861860] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.861885] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37\x1b[m\x1b[K,\n'}
+[1.861915] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25\x1b[m\x1b[K,\n'}
+[1.861944] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.861970] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[1.861997] (tsb_bt_core) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:13\x1b[m\x1b[K:\n'}
+[1.862023] (tsb_bt_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:85:53:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kconst string\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Kconst class std::__cxx11::basic_string<char>\x1b[m\x1b[K\xe2\x80\x99} has no member named \xe2\x80\x98\x1b[01m\x1b[Kc\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.862055] (tsb_bt_core) StderrLine: {'line': b'   85 |         "[%s] waiting for comando on %s...", name().\x1b[01;31m\x1b[Kc\x1b[m\x1b[K-str(), kCommandTopic);\n'}
+[1.862082] (tsb_bt_core) StderrLine: {'line': b'      |                                                     \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.864400] (tsb_bt_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:85:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstr\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KPtr\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[1.864477] (tsb_bt_core) StderrLine: {'line': b'   85 |         "[%s] waiting for comando on %s...", name().c-\x1b[01;31m\x1b[Kstr\x1b[m\x1b[K(), kCommandTopic);\n'}
+[1.864510] (tsb_bt_core) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.866882] (tsb_bt_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:15\x1b[m\x1b[K:\n'}
+[1.866986] (tsb_bt_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:89:31:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcmd\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.867019] (tsb_bt_core) StderrLine: {'line': b'   89 |     const std::string & val = \x1b[01;31m\x1b[Kcmd\x1b[m\x1b[K.value();\n'}
+[1.867049] (tsb_bt_core) StderrLine: {'line': b'      |                               \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[1.903206] (tsb_bt_core) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:16\x1b[m\x1b[K:\n'}
+[1.903338] (tsb_bt_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid tsb_bt_core::MoveTurtle::publishVelocity()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.903399] (tsb_bt_core) StderrLine: {'line': b'\x1b[01m\x1b[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/move_turtle.hpp:128:43:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KRC\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[1.903426] (tsb_bt_core) StderrLine: {'line': b'  128 |     } else if (current_cmd_ == "CIRCLE") {\x1b[01;31m\x1b[KRC\x1b[m\x1b[K\n'}
+[1.903453] (tsb_bt_core) StderrLine: {'line': b'      |                                           \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[1.905879] (-) TimerEvent: {}
+[2.006229] (-) TimerEvent: {}
+[2.106556] (-) TimerEvent: {}
+[2.206880] (-) TimerEvent: {}
+[2.307115] (-) TimerEvent: {}
+[2.407440] (-) TimerEvent: {}
+[2.507764] (-) TimerEvent: {}
+[2.608106] (-) TimerEvent: {}
+[2.708433] (-) TimerEvent: {}
+[2.808763] (-) TimerEvent: {}
+[2.909084] (-) TimerEvent: {}
+[3.009465] (-) TimerEvent: {}
+[3.109726] (-) TimerEvent: {}
+[3.210011] (-) TimerEvent: {}
+[3.310358] (-) TimerEvent: {}
+[3.410710] (-) TimerEvent: {}
+[3.510985] (-) TimerEvent: {}
+[3.611237] (-) TimerEvent: {}
+[3.711492] (-) TimerEvent: {}
+[3.811745] (-) TimerEvent: {}
+[3.824638] (tsb_bt_core) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/bt_executor.dir/build.make:76: CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o] Error 1\n'}
+[3.824894] (tsb_bt_core) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_executor.dir/all] Error 2\n'}
+[3.825058] (tsb_bt_core) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.826846] (tsb_bt_core) CommandEnded: {'returncode': 2}
+[3.835147] (tsb_bt_core) JobEnded: {'identifier': 'tsb_bt_core', 'rc': 2}
+[3.845507] (-) EventReactorShutdown: {}

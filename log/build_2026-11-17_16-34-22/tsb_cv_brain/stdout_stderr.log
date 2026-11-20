@@ -1,0 +1,15 @@
+running develop
+running egg_info
+writing tsb_cv_brain.egg-info/PKG-INFO
+writing dependency_links to tsb_cv_brain.egg-info/dependency_links.txt
+writing entry points to tsb_cv_brain.egg-info/entry_points.txt
+writing requirements to tsb_cv_brain.egg-info/requires.txt
+writing top-level names to tsb_cv_brain.egg-info/top_level.txt
+reading manifest file 'tsb_cv_brain.egg-info/SOURCES.txt'
+writing manifest file 'tsb_cv_brain.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages/tsb-cv-brain.egg-link (link to .)
+Installing vision_node script to /home/joao/TSB/recrutamento2026/install/tsb_cv_brain/lib/tsb_cv_brain
+
+Installed /home/joao/TSB/recrutamento2026/build/tsb_cv_brain
+running symlink_data

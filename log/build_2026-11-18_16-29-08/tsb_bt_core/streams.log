@@ -1,0 +1,12 @@
+[0.008s] Invoking command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble /usr/bin/cmake --build /home/joao/TSB/recrutamento2026/build/tsb_bt_core -- -j20 -l20
+[0.044s] [35m[1mConsolidate compiler generated dependencies of target bt_executor[0m
+[0.058s] [ 50%] [32mBuilding CXX object CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o[0m
+[1.900s] In file included from [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/src/bt_executor.cpp:15[m[K:
+[1.900s] [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:[m[K In member function ‘[01m[Kvirtual BT::NodeStatus tsb_bt_core::GetVisionCommand::tick()[m[K’:
+[1.900s] [01m[K/home/joao/TSB/recrutamento2026/ros2_ws/src/tsb_bt_core/include/tsb_bt_core/actions/get_vision_command.hpp:78:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kcommand[m[K’ was not declared in this scope
+[1.901s]    78 |       [01;31m[Kcommand[m[K = latest_command_;
+[1.901s]       |       [01;31m[K^~~~~~~[m[K
+[3.888s] gmake[2]: *** [CMakeFiles/bt_executor.dir/build.make:76: CMakeFiles/bt_executor.dir/src/bt_executor.cpp.o] Error 1
+[3.888s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/bt_executor.dir/all] Error 2
+[3.888s] gmake: *** [Makefile:146: all] Error 2
+[3.890s] Invoked command in '/home/joao/TSB/recrutamento2026/build/tsb_bt_core' returned '2': AMENT_PREFIX_PATH=/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/home/joao/TSB/recrutamento2026/install/tsb_bt_core:/opt/ros/humble CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/joao/TSB/recrutamento2026/install/tsb_cv_brain:/opt/ros/humble /usr/bin/cmake --build /home/joao/TSB/recrutamento2026/build/tsb_bt_core -- -j20 -l20

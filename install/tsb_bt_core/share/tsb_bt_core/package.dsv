@@ -1,0 +1,8 @@
+source;share/tsb_bt_core/hook/cmake_prefix_path.ps1
+source;share/tsb_bt_core/hook/cmake_prefix_path.dsv
+source;share/tsb_bt_core/hook/cmake_prefix_path.sh
+source;share/tsb_bt_core/local_setup.bash
+source;share/tsb_bt_core/local_setup.dsv
+source;share/tsb_bt_core/local_setup.ps1
+source;share/tsb_bt_core/local_setup.sh
+source;share/tsb_bt_core/local_setup.zsh

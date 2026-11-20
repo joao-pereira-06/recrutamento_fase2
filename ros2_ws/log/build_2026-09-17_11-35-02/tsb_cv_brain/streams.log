@@ -1,0 +1,25 @@
+[1.220s] Invoking command in '/home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain': PYTHONPATH=/home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain/build --no-deps symlink_data
+[1.563s] running develop
+[1.772s] running egg_info
+[1.773s] creating tsb_cv_brain.egg-info
+[1.773s] writing tsb_cv_brain.egg-info/PKG-INFO
+[1.773s] writing dependency_links to tsb_cv_brain.egg-info/dependency_links.txt
+[1.773s] writing entry points to tsb_cv_brain.egg-info/entry_points.txt
+[1.773s] writing requirements to tsb_cv_brain.egg-info/requires.txt
+[1.773s] writing top-level names to tsb_cv_brain.egg-info/top_level.txt
+[1.773s] writing manifest file 'tsb_cv_brain.egg-info/SOURCES.txt'
+[1.774s] reading manifest file 'tsb_cv_brain.egg-info/SOURCES.txt'
+[1.774s] writing manifest file 'tsb_cv_brain.egg-info/SOURCES.txt'
+[1.778s] running build_ext
+[1.778s] Creating /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages/tsb-cv-brain.egg-link (link to .)
+[1.778s] Installing vision_node script to /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/lib/tsb_cv_brain
+[1.778s] 
+[1.778s] Installed /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain
+[1.778s] running symlink_data
+[1.779s] creating /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/share/ament_index
+[1.779s] creating /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/share/ament_index/resource_index
+[1.779s] creating /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/share/ament_index/resource_index/packages
+[1.779s] symbolically linking /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain/resource/tsb_cv_brain -> /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/share/ament_index/resource_index/packages
+[1.779s] symbolically linking /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain/package.xml -> /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain
+[1.779s] creating /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/share/tsb_cv_brain/models
+[1.803s] Invoked command in '/home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain' returned '0': PYTHONPATH=/home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/install/tsb_cv_brain/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/xandas/Desktop/tecnico/SA/Recrutamento/recrutamento2026/build/tsb_cv_brain/build --no-deps symlink_data

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root BTCPP_format="4" project_name="tsb_challenge">
+    <include path="tree.xml"/>
+    <!-- Description of Node Models (used by Groot) -->
+    <TreeNodesModel>
+        <Action ID="GetVisionCommand" editable="true">
+            <output_port name="command" type="std::string">Latest command received from the vision node</output_port>
+        </Action>
+        <Action ID="MoveTurtle" editable="true">
+            <input_port name="command" type="std::string">Direction to move: LEFT | RIGHT | FORWARD</input_port>
+        </Action>
+    </TreeNodesModel>
+</root>
